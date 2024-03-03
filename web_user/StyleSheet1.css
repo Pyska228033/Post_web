@@ -1,0 +1,100 @@
+﻿body {
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="number"], input[type="password"], input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="date"] {
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+.card-form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+    .card-form label {
+        font-weight: bold;
+    }
+
+    .card-form input[type="text"] {
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+        .card-form input[type="text"]:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        .card-form input[type="text"]:invalid {
+            border-color: #dc3545;
+        }
+
+        .card-form input[type="text"]::placeholder {
+            color: #999;
+        }
+
+    .card-form .card-number {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .card-form .card-number input[type="text"] {
+            flex-grow: 1;
+            margin-right: 10px;
+        }
+
+    .card-form .card-holder,
+    .card-form .card-expiration,
+    .card-form .card-cvv {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .card-form .card-holder input[type="text"],
+        .card-form .card-expiration input[type="text"],
+        .card-form .card-cvv input[type="text"] {
+            flex-grow: 1;
+            margin-right: 10px;
+            max-width: 200px;
+        }
